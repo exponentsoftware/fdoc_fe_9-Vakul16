@@ -42,6 +42,7 @@ function Albums(props) {
                 {props.albums.map(album => {
                 return (
                     // key={band.id}
+                    
                 <ul>
                     <img alt="example" src={album.img} width="300" height="380" />
                     <li>{album.id}</li>

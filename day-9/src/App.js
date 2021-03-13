@@ -13,9 +13,12 @@ export class App extends Component {
   
     this.state = {
       albums: [
-        {id: 1, artist: "Vijay T", album_title: "Master", album_cover: "Music Anirudh R", songs: "Sound Track1", img: "https://pbs.twimg.com/media/ENHL1IpUYAI57ES.jpg"},
-        {id: 2, artist: "Naveen Polishetty", album_title: "Jathirathnalu", album_cover: "Music Radhan", songs: "Sound Track2", img:"https://i.pinimg.com/564x/98/00/43/980043f6a7f11de10b37db34b73739ab.jpg"},
-        {id: 3, artist: "Suriya", album_title: "Aakasam Nee Haddura", album_cover: "Music G. V. Prakash", songs: "Sound Track3", img : "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2019/11/10/Suriya-s-Soorari-Pottru-and-Aakasam-Nee-Haddura-movie-first-look-posters-2.jpg?quality=90&zoom=1&ssl=1"},
+        {id: 1, artist: "Vijay T", album_title: "Master", album_cover: "Music Anirudh R", img: "https://pbs.twimg.com/media/ENHL1IpUYAI57ES.jpg",
+      songs:[{Name: "Kutti Story", video_count: "100M", duration: "03.48"}]},
+        {id: 2, artist: "Naveen Polishetty", album_title: "Jathirathnalu", album_cover: "Music Radhan", img:"https://i.pinimg.com/564x/98/00/43/980043f6a7f11de10b37db34b73739ab.jpg",
+        songs:[{Name: "Chitti", video_count: "50M", duration: "03.04"}]},
+        {id: 3, artist: "Suriya", album_title: "Aakasam Nee Haddura", album_cover: "Music G. V. Prakash", img : "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2019/11/10/Suriya-s-Soorari-Pottru-and-Aakasam-Nee-Haddura-movie-first-look-posters-2.jpg?quality=90&zoom=1&ssl=1",
+        songs:[{Name: "Kaatuka Kanule", video_count: "20M", duration: "04.06"}]},
       ],
       errorMsg: ''
     }
