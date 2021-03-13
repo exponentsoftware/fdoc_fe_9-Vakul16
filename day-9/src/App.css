@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+.card{
+  align-items: center;
+  margin: 10px 50px;
+}
+.three-cards{
+  display: flex;
+  /* margin: 0px 100px; */
+  padding: 10px 0px 10px 0px;
+  font-family: 'Barlow', sans-serif;
+}
+.form{
+  font-family: 'Barlow', sans-serif;
+}
