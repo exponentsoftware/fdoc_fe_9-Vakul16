@@ -30,7 +30,7 @@ const Categories = () => {
         <div className="cardsWrap" key={id}>
           <h2>{category.name}</h2>
           <span className="seeAll">
-              <h1>LIST</h1>
+              <h1>LIST OF SONGS</h1>
             </span>
           <p className="subText">{category.tagline}</p>
           <Playlists category_id={category.id} />
