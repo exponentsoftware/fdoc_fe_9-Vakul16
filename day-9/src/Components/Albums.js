@@ -9,15 +9,16 @@ function Albums(props) {
             <div>
             <div className="searchForm">
                 <form>
+                    <label>Search: </label>
                     <input
                     type = "text"
-                    placeholder="Search for..."
+                    placeholder="Artist, or album title"
                     // value={this.state.data}
                     onChange={(e) => {
                         setSearchTerm(e.target.value);
                     }}
                     />
-                    {props.albums.filter((val)=> {
+                    {props.albums.filter( val=> {
                         if(searchTerm === ""){
                             return val
                         }else if (val.artist.toLowerCase().includes(searchTerm.toLowerCase())){
@@ -45,7 +46,7 @@ function Albums(props) {
                     
                 <ul>
                     <img alt="example" src={album.img} width="300" height="380" />
-                    <li>{album.id}</li>
+                    <li key="{album}">{album.id}</li>
                     <li>{album.artist}</li>
                     <li>{album.album_title}</li>
                     <li>{album.album_cover}</li>

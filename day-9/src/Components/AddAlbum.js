@@ -30,7 +30,7 @@ export class AddAlbum extends Component {
         obj.album_title = this.props.receiveFunc;
         obj.artist = this.state.artist;
         obj.album_cover = this.state.album_cover;
-        alert(` ${obj.id} ${obj.album_title} ${obj.artist} ${obj.album_cover}`)
+        // alert(` ${obj.id} ${obj.album_title} ${obj.artist} ${obj.album_cover}`)
         console.log("submitted the data", obj)
         this.props.receiveFunc(obj)
         e.preventDefault()
@@ -42,7 +42,7 @@ export class AddAlbum extends Component {
                 
                 <form onSubmit = {this.handleSubmit}>
                     <div className="form-1">
-                        <label>Album Title:</label>
+                        <label>Album Title: </label>
                         <input 
                          type="text"
                          id="album_title"
@@ -52,7 +52,7 @@ export class AddAlbum extends Component {
                     </div>
                     
                     <div className="form-2">
-                        <label>Artist:</label>
+                        <label>Artist: </label>
                         <input
                          type="text"
                          id="artist"
@@ -61,7 +61,7 @@ export class AddAlbum extends Component {
                         />
                     </div>
                     <div className="form-3">
-                        <label>Album Cover:</label>
+                        <label>Album Cover: </label>
                         <input
                          type="file"
                          id="album_cover"
